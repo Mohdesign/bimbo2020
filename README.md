@@ -1,4 +1,4 @@
-# nextjs-starter-forty
+# nextjs-bimbo-app
 A Next.js starter based on the Forty site template, designed by HTML5 UP. Check out https://codebushi.com/nextjs-website-starters/ for more Next.js starters and templates.
 
 ## Preview
@@ -11,10 +11,10 @@ To get started, simply clone the repository and run `npm install`
 
 ```
 # Clone the repo
-git clone https://github.com/codebushi/nextjs-starter-forty.git
+git clone https://github.com/Mohdesign/bimbo2020.git
 
 # Move into the new directory
-cd nextjs-starter-forty/
+cd bimbo2020/
 
 # Install npm packages
 npm install

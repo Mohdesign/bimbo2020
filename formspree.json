@@ -1,8 +1,0 @@
-{
-  "forms": {
-    "signupForm": {
-      "name": "Sign-up Form",
-      "actions": [{ "app": "mailchimp", "type": "addOrUpdateContact" }]
-    }
-  }
-}
