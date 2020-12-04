@@ -1,26 +1,24 @@
 import PropTypes from 'prop-types'
 import Link from 'next/link'
 
+ 
 const Menu = (props) => (
-    <nav id="menu">
-        <div className="inner">
-            <ul className="links">
-                <li><Link href="/"><a><span onClick={props.onToggleMenu}>Home</span></a></Link></li>
-                <li><Link href="/landing"><a><span onClick={props.onToggleMenu}>Landing</span></a></Link></li>
-                <li><Link href="/generic"><a><span onClick={props.onToggleMenu}>Generic</span></a></Link></li>
-                <li><Link href="/elements"><a><span onClick={props.onToggleMenu}>Elements</span></a></Link></li>
-            </ul>
-            <ul className="actions vertical">
-                <li><a href="#" className="button special fit">Get Started</a></li>
-                <li><a href="#" className="button fit">Log In</a></li>
-            </ul>
-        </div>
-        <a className="close" onClick={props.onToggleMenu} href="javascript:;">Close</a>
+    <nav>
+        <ul id="navigation">    
+            <li><Link href="/"><a>Home</a></Link></li>
+            <li><Link href="/about"><a>About</a></Link>
+                <ul className="submenu">
+                    <li><Link href="/about"><a>History</a></Link></li>
+                    <li><Link href="/staff"><a>Key Staff</a></Link></li>
+                    <li><Link href="/facility"><a>Our Facility</a></Link></li>
+                </ul>
+            </li>
+            <li><Link href="/services"><a>Our Services / Programs</a></Link></li>
+            <li><Link href="/gallery"><a>Gallery</a></Link></li>
+            <li><Link href="/contact"><a>Contact</a></Link></li>
+            <li><Link href="/"><a>EN | FR</a></Link></li>
+        </ul>
     </nav>
 )
-
-Menu.propTypes = {
-    onToggleMenu: PropTypes.func
-}
-
+ 
 export default Menu
